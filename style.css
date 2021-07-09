@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Edit Undo Dot BRK";
+    src: url("./font/edundot.ttf") format("truetype");
+}
+/* reset */
+html,
+body,
+div,
+ul,
+li,
+h1,
+img {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+ul {
+    list-style: none;
+}
+/* body */
+html,
+body {
+    height: 100%;
+    font-family: "Edit Undo Dot BRK", sans-serif;
+}
+/* backgroundcolor height 확대 잘림 */
+.wrap {
+    height: 100%;
+    padding: 5% 10%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+.title {
+    padding-left: 35px;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2rem;
+    text-align: center;
+    text-shadow: 3px 3px 0 #69c9d0, -3px -3px 0 #ee1d52;
+}
+/* screen */
+.screen_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin: 60px auto;
+}
+.screen_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+.screen-txt {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.screen_img {
+    display: none;
+    width: 150px;
+    height: 150px;
+}
+/* menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 270px;
+    margin: auto;
+}
+.menu_item {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.menu_item:hover .imgs {
+    transform: scale(1.2);
+}
+.imgs {
+    width: 70px;
+    height: 70px;
+}
+/* score */
+.score_wrap {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 30px auto;
+}
+.score_item {
+    width: 30%;
+}

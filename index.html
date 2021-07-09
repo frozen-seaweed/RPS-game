@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPS Game</title>
+    <script src="./js/jquery-1.7.2.min.js" defer></script>
+    <script src="./js/RPSGame.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1 class="title">CRAYON</h1>
+        <ul class="screen_wrap">
+            <li class="screen_item">
+                <span class="screen-txt">User</span>
+                <img src="" alt="user" class="screen_img" id="userBox" >
+            </li>
+            <li class="screen_item">
+                <span class="screen-txt">Comp</span>
+                <img src="" alt="computer"class="screen_img" id="compBox" >
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu_item">
+                <img src="./images/rock_1.png" alt="rock" class="imgs" id="rock">
+            </li>
+            <li class="menu_item">
+                <img src="./images/scissors_1.png" alt="scissors" class="imgs" id="paper">
+            </li>
+            <li class="menu_item">
+                <img src="./images/paper_1.png" alt="paper" class="imgs" id="scissors">
+            </li>
+        </ul>
+        <ul class="score_wrap">
+            <li class="score_item">
+                <div class="score">WIN : <span id="win"></span></div>
+            </li>
+            <li class="score_item">
+                <div class="score">LOSS : <span id="loss"></span></div>
+            </li>
+            <li class="score_item">
+                <div class="score">DRAW : <span id="draw"></span></div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
