@@ -3,7 +3,7 @@
     const compBox = document.getElementById('compBox');
     const txtBox = document.getElementsByClassName('screen-txt');
     let userChoice, compChoice;
-    let win = 0, loss = 0, draw = 0;
+    let win = 0, lose = 0, draw = 0;
     
     $('.imgs').click( function() {
         for (let i=0; i<txtBox.length; i++) {
@@ -33,19 +33,19 @@
             case 1 : 
                 if (compChoice === 1) {draw++; break;}
                 if (compChoice === 2) {win++; break;}
-                if (compChoice === 3) {loss++; break;}
+                if (compChoice === 3) {lose++; break;}
             case 2 : 
-                if (compChoice === 1) {loss++; break;}
+                if (compChoice === 1) {lose++; break;}
                 if (compChoice === 2) {draw++; break;}
                 if (compChoice === 3) {win++; break;}
             case 3 : 
                 if (compChoice === 1) {win++; break;}
-                if (compChoice === 2) {loss++; break;}
+                if (compChoice === 2) {lose++; break;}
                 if (compChoice === 3) {draw++; break;}
         }
 
         document.getElementById('win').innerHTML = win;
-        document.getElementById('loss').innerHTML = loss;
+        document.getElementById('lose').innerHTML = lose;
         document.getElementById('draw').innerHTML = draw;
 
         // return false; 없어도 되는지
